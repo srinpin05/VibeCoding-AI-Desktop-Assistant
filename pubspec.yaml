@@ -1,0 +1,30 @@
+name: ai_overlay
+description: Desktop AI overlay with global hotkey and screenshots
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Window controls & translucency
+  window_manager: ^0.4.2
+  # Global hotkeys (Alt+Q)
+  hotkey_manager: ^0.1.7
+  # Capture screen to file
+  screen_capturer: ^0.2.3
+  screen_retriever: 0.2.0
+  # HTTP for AI calls
+  http: ^1.2.2
+  # Basic state mgmt
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
